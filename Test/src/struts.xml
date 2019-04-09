@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"	
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+  <package name="hellloword" extends="struts-default">
+   <action name="Compute" class="Free.ChinaAndInternational" method="Compute3">
+  <result name="success">succeed.jsp</result>
+  <result name="error">PageJump.jsp</result>
+  </action>
+   <action name="Compute2" class="NotFree.Destination" method="Compute1">
+    <result name="success">NotFree.jsp</result>
+    <result name="error">NotFreeFail.jsp</result>
+  </action>
+  </package>
+</struts>
